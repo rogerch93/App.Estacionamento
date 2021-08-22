@@ -67,6 +67,16 @@ namespace AppEstacioanamento
                         Console.WriteLine("Numero da Vaga:");
                         vaga.NumVaga = Console.ReadLine();
 
+                        while(Convert.ToInt32(vaga.NumVaga) > 5)
+                        {
+                            if (Convert.ToInt32(vaga.NumVaga) > 5)
+                            {
+                                Console.WriteLine("Não temos mais espaço! informe para o cliente o segundo estacionamento.");
+                            }
+                            break;
+                        }
+                        Console.WriteLine();
+                        
                         Console.WriteLine("Hora de entrada:");
                         Console.ReadLine();
                         break;
