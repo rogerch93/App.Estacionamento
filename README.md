@@ -12,11 +12,19 @@
 
 - Placa
 
+- CPF
+
+- NomePessoa
+
 #### Classe Vagas contem.
 
 - NumVaga
 
-- NomePessoa
+- Validador de Cpf para confirmação de cpf valido ou invalido.
 
-- CPF
+[Implementação]
+- Reduzindo código tanto nas classes quanto no código principal, para processamento de informação mais rapida.
+
+
+
 
