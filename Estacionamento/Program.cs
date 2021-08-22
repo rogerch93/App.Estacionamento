@@ -31,10 +31,6 @@ namespace AppEstacioanamento
                         Console.WriteLine("Informe a Placa:");
                         carro.Placa = Console.ReadLine();
 
-                        carros[indiceCarro] = carro;
-                        indiceCarro++;
-                        
-
                         Console.WriteLine("Nome:");
                         carro.NomePessoa = Console.ReadLine();
 
@@ -48,13 +44,15 @@ namespace AppEstacioanamento
                                 Console.WriteLine("CPF inválido!");
                             }
                         }
+                        carros[indiceCarro] = carro;
+                        indiceCarro++;
                         break;
 
                     case "2":
                         foreach (var a in carros)
                         {
 
-                            if (!string.IsNullOrEmpty(a.CPF))
+                            if (!string.IsNullOrEmpty(a.NomePessoa))
                             {
                                 Console.WriteLine($"NOME:{a.NomePessoa}");
                                 Console.WriteLine($"CARRO:{a.Marca}");
