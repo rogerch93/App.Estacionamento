@@ -33,10 +33,8 @@ namespace AppEstacioanamento
 
                         carros[indiceCarro] = carro;
                         indiceCarro++;
-                        break;
+                        
 
-
-                    case "2":
                         Console.WriteLine("Nome:");
                         carro.NomePessoa = Console.ReadLine();
 
@@ -52,19 +50,11 @@ namespace AppEstacioanamento
                         }
                         break;
 
-                    case "3":
-                        Console.WriteLine("Numero da Vaga:");
-                        vaga.NumVaga = Console.ReadLine();
-
-                        Console.WriteLine("Hora de entrada:");
-                        Console.ReadLine();
-                        break;
-
-                    case "4":
+                    case "2":
                         foreach (var a in carros)
                         {
 
-                            if (!string.IsNullOrEmpty(a.Placa))
+                            if (!string.IsNullOrEmpty(a.CPF))
                             {
                                 Console.WriteLine($"NOME:{a.NomePessoa}");
                                 Console.WriteLine($"CARRO:{a.Marca}");
@@ -75,7 +65,15 @@ namespace AppEstacioanamento
                         }
                         break;
 
-                    case "5":
+                    case "3":
+                        Console.WriteLine("Numero da Vaga:");
+                        vaga.NumVaga = Console.ReadLine();
+
+                        Console.WriteLine("Hora de entrada:");
+                        Console.ReadLine();
+                        break;
+
+                    case "4":
                         //informar valor de cada cliente.
                         break;
 
@@ -91,18 +89,17 @@ namespace AppEstacioanamento
             Console.WriteLine();
             Console.WriteLine("***SITEMA PARA ESTACIONAMENTO***");
             Console.WriteLine("----------------------------------");
+            Console.WriteLine();
             Console.WriteLine(" Informe qual opção desejada");
-            Console.WriteLine("----------------------------------");
+            Console.WriteLine("==================================");
             Console.WriteLine(" 1 - Inserir novo veiculo:");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine(" 2 - Nome do cliente:");
-            Console.WriteLine("----------------------------------");
+            Console.WriteLine("==================================");
+            Console.WriteLine(" 2 - Listar veiculos:");
+            Console.WriteLine("==================================");
             Console.WriteLine(" 3 - Numero da vaga");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine(" 4 - Listar veiculos:");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine(" 5 - Informar valor ao cliente:");
-            Console.WriteLine("----------------------------------");
+            Console.WriteLine("==================================");
+            Console.WriteLine(" 4 - Informar valor ao cliente:");
+            Console.WriteLine("==================================");
             Console.WriteLine(" X - Sair");
             Console.WriteLine();
 

@@ -1,0 +1,16 @@
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.exe
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.deps.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.runtimeconfig.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.runtimeconfig.dev.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\ref\Estacionamento.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\bin\Debug\net5.0\Estacionamento.pdb
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.csproj.AssemblyReference.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.AssemblyInfoInputs.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.AssemblyInfo.cs
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.csproj.CoreCompileInputs.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\ref\Estacionamento.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.pdb
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\App.Estacionamento\Estacionamento\obj\Debug\net5.0\Estacionamento.genruntimeconfig.cache
