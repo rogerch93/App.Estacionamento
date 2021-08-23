@@ -96,9 +96,23 @@ namespace AppEstacioanamento
 
                     case "3":
                         //informar valor de cada cliente.
-
-
-                        break;
+                        Console.WriteLine("Informe o CPF:");
+                        carro.CPF = Console.ReadLine();
+                        foreach (var a in carros)
+                        {
+                            if (carro.CPF != carro.CPF)
+                            {
+                                Console.WriteLine("Cliente Inexistente");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"NOME:{a.NomePessoa}");
+                                Console.WriteLine($"CARRO:{a.Modelo}");
+                                Console.WriteLine($"PLACA:{a.Placa}");
+                                Console.WriteLine($"HORA DE ENTRADA:{a.HoraEntrada}");
+                            }
+                        }
+                       break;
 
                     default:
                         throw new ArgumentOutOfRangeException();
