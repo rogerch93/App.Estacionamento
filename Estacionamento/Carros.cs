@@ -17,5 +17,11 @@ namespace AppEstacioanamento
         public string NomePessoa { get; set; }
 
         public string CPF { get; set; }
+
+        public string NumVaga { get; set; }
+
+        public string HoraEntrada { get; set; }
+
+        public string HoraSaida { get; set; }
     }
 }

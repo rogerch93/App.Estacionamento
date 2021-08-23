@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppEstacioanamento
 {
-    public class Vaga
+    public class Validar
     {
-        public string NumVaga { get; set; }
+        
 
         public static bool validar(string v)
         {
