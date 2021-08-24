@@ -94,19 +94,21 @@ namespace AppEstacioanamento
                             }
                             Console.WriteLine();
 
-                            Console.WriteLine("Informar valor a algum cliente ? Y/N");
+                            Console.WriteLine("   " + "Informar valor a algum cliente ? Y/N");
                             if(Console.ReadKey(true).Key != ConsoleKey.Y)
                             {
                                 break;
                             }
                             else
                             {
-                                Console.WriteLine("insira o horario no seguinte formato (1, 2, 3");
-                                Console.WriteLine("Insira a hora de entrada");
+                                Console.WriteLine("*********************************************");
+                                Console.WriteLine();
+                                Console.WriteLine("   " + "insira o horario no seguinte formato (00:00:00)");
+                                Console.WriteLine("   " + "Insira a hora de entrada");
                                 carro.HoraEntrada = Console.ReadLine();
                                 Console.WriteLine("");
 
-                                Console.WriteLine("Insira a hora de saida");
+                                Console.WriteLine("   " + "Insira a hora de saida");
                                 carro.HoraSaida =( Console.ReadLine());
                                 Console.WriteLine("");
 
@@ -119,29 +121,40 @@ namespace AppEstacioanamento
 
                                 var soma = parsed1 - parsed2;
 
-                                Console.WriteLine("Horas consumidas no estacionamento:");
+                                Console.WriteLine("   " + "Horas consumidas no estacionamento:");
                                 Console.WriteLine(soma);
 
                                 Console.WriteLine();
 
-                                Console.WriteLine("Informe as horas que o veiculo ficou no estacionamento");
+                                Console.WriteLine("   " + "Informe as horas que o veiculo ficou no estacionamento");
                                 carro.Total = Console.ReadLine();
                                 
                                 var valor =  Convert.ToDouble(carro.Total) * 5;
 
                                 Console.WriteLine();
 
-                                Console.WriteLine("Valor a ser pago: " + valor);
+                                Console.WriteLine("   " + "Valor a ser pago: R$" + valor + ",00");
 
-                                Console.WriteLine("Liberar vaga");
+                                /*Por ter usado uma array tive que usar a função clear para limpar a vaga do cliente*/
+                                Console.WriteLine("   " + "Liberar vaga");
 
+                                Console.WriteLine();
+
+                                Console.WriteLine("   " + "Insira o numero da vaga a partir de qual vaga deseja excluir cliente:");
+                                Console.WriteLine("   " + "EX: do 0 ao 1 para excluir o cliente da vaga 0 e assim sussecivamente.");
+                                                                                    
+                                Console.WriteLine();
+
+                                Console.WriteLine("   " + "Primeiro numero:");
                                 var e1 = Console.ReadLine();
+
+                                Console.WriteLine();
+
+                                Console.WriteLine("   " + "Segundo Numero:");
                                 var e2 = Console.ReadLine();
 
                                 Array.Clear(carros,Convert.ToInt32(e1),Convert.ToInt32(e2));
-                                
-                                
-
+                                Console.WriteLine("   " + "*********************************************");
                             }
                         }
                         break;
@@ -165,8 +178,6 @@ namespace AppEstacioanamento
             Console.WriteLine("     " + " 1 - Inserir novo veiculo:");
             Console.WriteLine("     " + "==================================");
             Console.WriteLine("     " + " 2 - Listar veiculos:");
-            Console.WriteLine("     " + "==================================");
-            Console.WriteLine("     " + " 3 - Informar valor ao cliente:");
             Console.WriteLine("     " + "==================================");
             Console.WriteLine("     " + " X - Sair");
             Console.WriteLine();
