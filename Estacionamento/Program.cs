@@ -48,7 +48,8 @@ namespace AppEstacioanamento
 
                         /*Verifica se sera cadastrado um numero maior do que contem em vagas
                         se caso houver sera exibido um alerta */
-                        Console.WriteLine("   " + "Numero da Vaga:");
+                        Console.WriteLine("   " + "Numero da Vaga: " +
+                            " Obs: Comece sempre do numero 0 para identificar a vaga.");
                         carro.NumVaga = Console.ReadLine();
 
                         while (Convert.ToInt32(carro.NumVaga) > 5)
@@ -91,28 +92,59 @@ namespace AppEstacioanamento
                                 Console.WriteLine();
                                 Console.WriteLine("*********************************************");
                             }
-                        }
-                        break;
+                            Console.WriteLine();
 
-                    case "3":
-                        //informar valor de cada cliente.
-                        Console.WriteLine("Informe o CPF:");
-                        carro.CPF = Console.ReadLine();
-                        foreach (var a in carros)
-                        {
-                            if (carro.CPF != carro.CPF)
+                            Console.WriteLine("Informar valor a algum cliente ? Y/N");
+                            if(Console.ReadKey(true).Key != ConsoleKey.Y)
                             {
-                                Console.WriteLine("Cliente Inexistente");
+                                break;
                             }
                             else
                             {
-                                Console.WriteLine($"NOME:{a.NomePessoa}");
-                                Console.WriteLine($"CARRO:{a.Modelo}");
-                                Console.WriteLine($"PLACA:{a.Placa}");
-                                Console.WriteLine($"HORA DE ENTRADA:{a.HoraEntrada}");
+                                Console.WriteLine("insira o horario no seguinte formato (1, 2, 3");
+                                Console.WriteLine("Insira a hora de entrada");
+                                carro.HoraEntrada = Console.ReadLine();
+                                Console.WriteLine("");
+
+                                Console.WriteLine("Insira a hora de saida");
+                                carro.HoraSaida =( Console.ReadLine());
+                                Console.WriteLine("");
+
+                                Convert.ToDateTime(carro.HoraEntrada);
+                                Convert.ToDateTime(carro.HoraSaida);
+                                
+
+                                TimeSpan parsed1 = TimeSpan.Parse(carro.HoraEntrada);
+                                TimeSpan parsed2 = TimeSpan.Parse(carro.HoraSaida);
+
+                                var soma = parsed1 - parsed2;
+
+                                Console.WriteLine("Horas consumidas no estacionamento:");
+                                Console.WriteLine(soma);
+
+                                Console.WriteLine();
+
+                                Console.WriteLine("Informe as horas que o veiculo ficou no estacionamento");
+                                carro.Total = Console.ReadLine();
+                                
+                                var valor =  Convert.ToDouble(carro.Total) * 5;
+
+                                Console.WriteLine();
+
+                                Console.WriteLine("Valor a ser pago: " + valor);
+
+                                Console.WriteLine("Liberar vaga");
+
+                                var e1 = Console.ReadLine();
+                                var e2 = Console.ReadLine();
+
+                                Array.Clear(carros,Convert.ToInt32(e1),Convert.ToInt32(e2));
+                                
+                                
+
                             }
                         }
-                       break;
+                        break;
 
                     default:
                         throw new ArgumentOutOfRangeException();

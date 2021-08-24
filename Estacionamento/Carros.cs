@@ -23,5 +23,7 @@ namespace AppEstacioanamento
         public string HoraEntrada { get; set; }
 
         public string HoraSaida { get; set; }
+
+        public string Total { get; set; }
     }
 }
