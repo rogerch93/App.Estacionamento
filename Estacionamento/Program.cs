@@ -48,7 +48,7 @@ namespace AppEstacioanamento
 
                         /*Verifica se sera cadastrado um numero maior do que contem em vagas
                         se caso houver sera exibido um alerta */
-                        Console.WriteLine("   " + "Numero da Vaga: " +
+                        Console.WriteLine("   " + "Numero da Vaga: \n" +
                             " Obs: Comece sempre do numero 0 para identificar a vaga.");
                         carro.NumVaga = Console.ReadLine();
 
